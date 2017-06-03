@@ -15,3 +15,6 @@ You can use this example as a boilerplate to fast creating React+Redux+React Too
 3. Open `localhost:8080` in your browser
 
 *Important note: current version is not running at Windows systems!*
+
+### TODO
+- Add NPM scripts to running and building project at Windows systems.

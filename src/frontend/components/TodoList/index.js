@@ -11,7 +11,7 @@ const TodoList = (props) => {
       return <ProgressBar type='circular' mode='indeterminate' multicolor />;
     case 'content': {
       const todos = tasks.length > 0 ? tasks.map((task, index) => <ListCheckbox
-        caption={`${task.name} [Срок выполнения: ${moment(task.due).locale('ru').format('DD MMM YYYY')}]`}
+        caption={`${task.name} [Deadline: ${moment(task.due).locale('en-us').format('DD MMM YYYY')}]`}
         legend={task.description}
         checked={task.done}
         onChange={() => props.onChecked(index, !task.done)}
